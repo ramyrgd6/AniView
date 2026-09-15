@@ -10,6 +10,19 @@ recommendations, an embedded player, and a local-video library.
 
 > **Current platform:** Fedora Linux. AniView currently embeds mpv through
 > X11/XWayland. Windows support is planned, but is not part of this release.
+## Screenshots
+
+### Home
+![AniView Home](screenshots/home.png)
+
+### Search
+![AniView Search](screenshots/search.png)
+
+### Watch
+![AniView Watch](screenshots/watch.png)
+
+### Local Library
+![AniView Library](screenshots/library.png)
 
 ## What AniView does
 
