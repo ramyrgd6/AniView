@@ -1,0 +1,11 @@
+#!/bin/sh
+# SPDX-License-Identifier: MIT
+# ani-cli sends candidate menu items on stdin. We capture them for the GUI
+# instead of opening fzf/rofi.
+: "${ANIVIEW_CAPTURE_DIR:?ANIVIEW_CAPTURE_DIR is not set}"
+prompt=""
+for arg in "$@"; do prompt="$arg"; done
+printf '%s\n' "$prompt" > "$ANIVIEW_CAPTURE_DIR/prompt"
+cat > "$ANIVIEW_CAPTURE_DIR/items"
+# Returning no selection intentionally makes ani-cli stop at this menu.
+exit 1

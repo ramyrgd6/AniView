@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest an improvement to AniView
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Home / navigation
+        - Search
+        - Player / episodes
+        - Local Library
+        - Settings
+        - Packaging / platform support
+        - Other
+    validations:
+      required: true

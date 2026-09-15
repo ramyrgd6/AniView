@@ -1,0 +1,7 @@
+#!/bin/sh
+# SPDX-License-Identifier: MIT
+# Pretends to be an mpv executable so ani-cli gives us all mpv arguments
+# (referrer, subtitle URL, title, stream URL). Arguments are NUL-separated.
+: "${ANIVIEW_BRIDGE_OUT:?ANIVIEW_BRIDGE_OUT is not set}"
+printf '%s\0' "$@" > "$ANIVIEW_BRIDGE_OUT"
+exit 0

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Test/lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build outputs
+dist/
+build/
+*.rpm
+*.tar.gz
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Local runtime/debug artifacts
+ani-cli
+ANI-CLI-LICENSE
+*.log

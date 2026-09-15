@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible AniView problem
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting a bug. Please avoid posting account credentials or private data.
+  - type: input
+    id: version
+    attributes:
+      label: AniView version
+      placeholder: "0.5.3"
+    validations:
+      required: true
+  - type: input
+    id: fedora
+    attributes:
+      label: Fedora version and desktop session
+      placeholder: "Fedora 43, GNOME Wayland"
+    validations:
+      required: true
+  - type: input
+    id: mpv
+    attributes:
+      label: mpv version
+      description: Run `mpv --version`.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open AniView
+        2. Search for ...
+        3. Click ...
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: If playback is involved, include relevant lines from `~/.cache/aniview/mpv.log`. Remove private file paths if needed.
+      render: shell
