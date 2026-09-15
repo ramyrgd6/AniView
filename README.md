@@ -8,8 +8,10 @@ AniView is an early-alpha desktop frontend for **ani-cli** and **mpv**. It gives
 ani-cli a graphical interface with search, episode browsing, watch history,
 recommendations, an embedded player, and a local-video library.
 
-> **Current platform:** Fedora Linux. AniView currently embeds mpv through
-> X11/XWayland. Windows support is planned, but is not part of this release.
+> **Officially supported:** Fedora Linux.
+> AniView is currently developed and tested on Fedora and embeds mpv through
+> X11/XWayland. Other Linux distributions may work with manual dependency
+> setup, but are currently untested and unsupported. Windows support is planned.
 ## Screenshots
 
 ### Home
