@@ -12,6 +12,7 @@ recommendations, an embedded player, and a local-video library.
 > AniView is currently developed and tested on Fedora and embeds mpv through
 > X11/XWayland. Other Linux distributions may work with manual dependency
 > setup, but are currently untested and unsupported. Windows support is planned.
+
 ## Screenshots
 
 ### Home
